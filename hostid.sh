@@ -2,7 +2,8 @@
 #
 # Purpose: Write the passed in parameter as hostid to /etc/hostid
 #          If no parameter is passed, write current hostid to /etc/hostid
-# Author:  Fazle Arefin
+# Author:  Fazle Arefin [fazlearefin at yahoo dot com]
+#
 
 if [ -n "$1" ]; then
   host_id=$1
