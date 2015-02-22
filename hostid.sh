@@ -5,7 +5,7 @@
 # Author:  Fazle Arefin [fazlearefin at yahoo dot com]
 #
 
-if [ -n "$1" ]; then
+if [[ -n "$1" ]]; then
   host_id=$1
   # chars must be 0-9, a-z, A-Z and exactly 8 chars
   egrep -o '^[a-fA-F0-9]{8}$' <<< $host_id || exit 1
