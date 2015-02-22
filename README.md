@@ -21,6 +21,6 @@ This script let you copy your ssh-key to your servers for passwordless authentic
 
 ### Prerequisite
 * You will need to install the `sshpass` package
-* You will need to have your password in plain-text or in base64 encoding (adding a bit of extra security) in a file. Change the `$PWDFILE`
-* If you happen to encode your password in base64, flip the value of `$BASE64_ENC`
+* You will need to have your password in plain-text or in base64 encoding (adding a bit of extra security) in a file. Change the `$Pwd_File`
+* If you happen to encode your password in base64, flip the value of `$Base64_Enc`
 
