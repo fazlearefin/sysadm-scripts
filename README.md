@@ -2,8 +2,8 @@
 
 Collection of System Admin's tools for those things which still needs to be done manually
 
-* hostid.sh
-* ssh-copy-id-auto.sh
+* `hostid.sh`
+* `ssh-copy-id-auto.sh`
 
 * * *
 
@@ -23,4 +23,3 @@ This script let you copy your ssh-key to your servers for passwordless authentic
 * You will need to install the `sshpass` package
 * You will need to have your password in plain-text or in base64 encoding (adding a bit of extra security) in a file. Change the `$Pwd_File`
 * If you happen to encode your password in base64, flip the value of `$Base64_Enc`
-
