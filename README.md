@@ -4,6 +4,7 @@ Collection of System Admin's tools for those things which still needs to be done
 
 - `hostid.sh`
 - `ssh-copy-id-auto.sh`
+- `check-disk-media-with-iso.sh`
 
 ---
 
