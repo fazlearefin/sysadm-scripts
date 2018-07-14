@@ -33,3 +33,11 @@ This script is useful when you want to check, for example, a bootable USB Disk y
 - You will need to install the `sshpass` package
 - You will need to have your password in plain-text or in base64 encoding (adding a bit of extra security) in a file. Change the `$Pwd_File`
 - If you happen to encode your password in base64, flip the value of `$Base64_Enc`
+
+---
+
+## Donations
+
+Bitcoin (BTC): `38uvDLV4GzcAB7qMUEM5chqivESqNPWPZW`
+
+Litecoin (LTC):`MRAwH2WHUprCn5RcpKWKMkfaUJicTpsbWr` or `3Jxny96KXhzmya9iiSWyY7RB9c8AXRGN3n`
