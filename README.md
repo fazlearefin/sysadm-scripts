@@ -5,6 +5,7 @@ Collection of System Admin's tools for those things which still needs to be done
 - `hostid.sh`
 - `ssh-copy-id-auto.sh`
 - `check-disk-media-with-iso.sh`
+- `update-vagrant-boxes.sh`
 
 ---
 
@@ -33,6 +34,12 @@ This script is useful when you want to check, for example, a bootable USB Disk y
 - You will need to install the `sshpass` package
 - You will need to have your password in plain-text or in base64 encoding (adding a bit of extra security) in a file. Change the `$Pwd_File`
 - If you happen to encode your password in base64, flip the value of `$Base64_Enc`
+
+---
+
+## update-vagrant-boxes.sh
+
+This script upgrades all your installed [vagrant](https://www.vagrantup.com/) boxes and purges old versions of the boxes.
 
 ---
 
