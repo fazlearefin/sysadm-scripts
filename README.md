@@ -47,4 +47,6 @@ This script upgrades all your installed [vagrant](https://www.vagrantup.com/) bo
 
 Bitcoin (BTC): `38uvDLV4GzcAB7qMUEM5chqivESqNPWPZW`
 
+Ethereum (ETH): `0xb87A10e8e3fa4Ea71b478f8f0c8798977dBe28Ed`
+
 Litecoin (LTC):`MRAwH2WHUprCn5RcpKWKMkfaUJicTpsbWr` or `3Jxny96KXhzmya9iiSWyY7RB9c8AXRGN3n`
