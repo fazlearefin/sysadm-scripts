@@ -17,6 +17,12 @@ The `hostid` command lets you see the current hostid.
 
 ---
 
+## myssh.sh
+
+This script can be used instead of the `ssh` command. It tries to ssh to a server using key-based auth, and if fails, copies the key to the server and tries to ssh again.
+
+---
+
 ## ssh-copy-id-auto.sh
 
 This script let you copy your ssh-key to your servers for passwordless authentication. This script will help you in a situation where you have a thousand servers in which you want to copy your ssh-key. You can use ssh-copy-id command but it will ask you your password a thousand times. Even if you do automate that, ssh-copy-id will copy to one server at a time which is painfully slow for a thousand servers.
