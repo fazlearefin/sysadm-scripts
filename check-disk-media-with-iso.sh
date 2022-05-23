@@ -7,7 +7,7 @@ if [[ $# -ne 2 ]]; then
 fi
 
 # the hash application to use, can be other like sha1sum, sha256sum, sha512sum, cksum
-HASHAPP='md5sum'
+HASHAPP='sha256sum'
 
 # the ISO file
 ISOFILE=$1
@@ -16,22 +16,21 @@ ISOFILE=$1
 USBDEVICE=$2
 
 # check to see if file exists
-if ! [[ -e ${ISOFILE} ]]; then 
+if ! [[ -e ${ISOFILE} ]]; then
   echo "${ISOFILE} does not exist"
   exit 1
 fi
 
 hash_of_iso="$(${HASHAPP} ${ISOFILE} | cut -d' ' -f1)"
 echo "info: ${HASHAPP} of ${ISOFILE} - ${hash_of_iso}"
-bytes_of_iso=$(wc --bytes ${ISOFILE})
+bytes_of_iso=$(wc --bytes ${ISOFILE} | cut -d' ' -f1)
 
-hash_of_usb=$(dd if=${USBDEVICE} | head --bytes ${bytes_of_iso} | ${HASHAPP} | cut -d' ' -f1)
+hash_of_usb="$(dd if=${USBDEVICE} | head --bytes ${bytes_of_iso} | ${HASHAPP} | cut -d' ' -f1)"
 echo "info: ${HASHAPP} of ${USBDEVICE} - ${hash_of_usb}"
 
 if [[ ${hash_of_iso} == ${hash_of_usb} ]]; then
-  echo "OK: ${HASHAPP} of ISO(${hash_of_iso}) matches ${HASHAPP} of USB(${hash_of_usb})"
-  exit 0
-else 
-  echo "FAIL: ${HASHAPP} of ISO(${hash_of_iso}) does not match ${HASHAPP} of USB(${hash_of_usb})"
-  exit 1
+  echo "✅ OK: ISO(${hash_of_iso}) == USB(${hash_of_usb})"
+else
+  echo "❌ FAIL: ISO(${hash_of_iso}) != USB(${hash_of_usb})"
+  false
 fi
