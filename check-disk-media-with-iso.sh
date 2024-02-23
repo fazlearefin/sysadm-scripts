@@ -6,8 +6,8 @@ if [[ $# -ne 2 ]]; then
   exit 1
 fi
 
-# the hash application to use, can be other like sha1sum, sha256sum, sha512sum, cksum
-HASHAPP='sha256sum'
+# the hash application to use, can be other like b2sum, sha1sum, sha256sum, sha512sum, cksum
+HASHAPP='b2sum'
 
 # the ISO file
 ISOFILE=$1
