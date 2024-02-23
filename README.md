@@ -41,6 +41,8 @@ This script checks if a usb disk you created from a iso file using tools like `d
 
 This script is useful when you want to check, for example, a bootable USB Disk you created for Ubuntu from a Ubuntu iso image is not corrupted.
 
+Note: you might need to run this script with `sudo` privileges otherwise it may not be able to read the USB disk device.
+
 ---
 
 ## update-vagrant-boxes.sh
@@ -51,4 +53,4 @@ This script upgrades all your installed [vagrant](https://www.vagrantup.com/) bo
 
 ## Donations
 
-Bitcoin (BTC): `38uvDLV4GzcAB7qMUEM5chqivESqNPWPZW`
+Bitcoin (BTC): `bc1qzlhpm94vtk2ht67etdutzcy2g5an5v6g36tp0m`
